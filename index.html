@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="title">
+        <h1 style="text-align: center;">Student Form</h1>
+    </div>
+
+    <div id="inp-table">
+        <form action="">
+            <table>
+                <tr id="tr-name">
+                    <td>Name</td>
+                    <td><input   required  id="name" type="text" placeholder="Enter your Name"></td>
+                </tr>
+
+                <tr id="tr-age">
+                    <td>Age</td>
+                    <td><input required id="age" type="number" placeholder="Enter Your Age"></td>
+                </tr>
+
+
+                <tr id="tr-gender">
+                    <td>Gender</td>
+                    <td>
+                        <!-- Use value attributes and same name -->
+                        <input required type="radio" name="gender" value="Male"> <label>Male</label>
+                        <input required type="radio" name="gender" value="Female"> <label>Female</label>
+                    </td>
+                </tr>
+
+                <tr id="tr-course">
+                    <td>Course</td>
+                    <td>
+                        <select id="course" required>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="c">c</option>
+                            <option value="JavaScript">JavaScript</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr id="tr-email">
+                    <td>E-mail</td>
+                    <td><input id="email" type="email" placeholder="Enter Your E-mail"></td>
+                </tr>
+
+                <tr id="tr-phone">
+                    <td>Phone</td>
+                    <td><input id="phone" type="number" required placeholder="Enter Your Number"></td>
+                </tr>
+
+
+                <tr>
+                    <td><button type="button" onclick="getvalue()">Save</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="out-table">
+        <form action="">
+            <table>
+                <thead >
+                    <td>Name</td>
+                    <td>Age</td>
+                    <td>Gender</td>
+                    <td>Course</td>
+                    <td>Email</td>
+                    <td>Phone</td>
+                    <td>Action</td>
+                </thead>
+                <tbody id="rows">
+                    <!-- This will be filled with JavaScript -->
+               <!-- This will be filled with JavaScript -->
+            </table>
+        </form>
+    </div>
+    <script src="hello.js"></script>
+</body>
